@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galiखाना</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="screen-title">Galiखाना</h1>
+
+    <!-- Codeword Screen (optional, keep as is) -->
+    <div class="start-screen" id="codeword-screen" style="display:none;">
+      <input type="text" id="codeword-input" placeholder="Say the code-word!" autocomplete="off" />
+      <button onclick="verifyCodeword()">Enter</button>
+    </div>
+
+    <!-- Chat Screen (Discord-like) -->
+    <div id="chat-screen">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="sidebar-title">Servers</div>
+        <div class="sidebar-channel"># general</div>
+        <div class="sidebar-channel"># gali-chat</div>
+      </div>
+      <!-- Chat Area -->
+      <div class="chat-area">
+        <div class="chat-header"># general</div>
+        <div id="chat-messages">
+          <div style="margin-bottom:12px;"><span style="color:#21d015; font-weight:bold;">GaliBot</span>: Welcome to the chat!</div>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
